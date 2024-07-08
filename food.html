@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foods in Sabak Bernam</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+        nav {
+        background-color: white;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        }
+
+        .logo {
+        height: 70px; 
+        margin-right: 30px; 
+        }
+
+        nav a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 16px 20px;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+
+        nav a.active {
+        background-color: grey;
+        color: black;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh; /* Use min-height to ensure full viewport height coverage */
+            margin-top: 60px; /* Offset for fixed nav bar */
+        }
+        .left {
+            width: 30%;
+            background-image: url('Picture/food background.jpg'); /* Fixed the path and added quotes */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .left h1 {
+            font-size: 3em;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .right {
+            width: 70%;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .food-item {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .food-item:hover {
+            transform: translateY(-10px);
+        }
+        .food-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: filter 0.3s;
+        }
+        .food-item:hover img {
+            filter: brightness(70%);
+        }
+        .food-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            text-align: left;
+            transition: transform 0.3s;
+            transform: translateY(100%);
+        }
+        .food-item:hover .food-info {
+            transform: translateY(0);
+        }
+        .food-info h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .food-info p {
+            margin: 10px 0 0;
+            font-size: 1em;
+        }
+        footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="Picture/Logo explore sabak bernam.png" alt="Logo" class="logo">
+        <a href="index.html" >Home</a>
+        <a href="about.html">About</a>
+        <a href="food.html"class="active">Food</a>
+        <a href="culture.html">Culture</a>
+        <a href="attraction.html">Attractions</a>
+        <a href="accommodation.html">Accommodation</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="left">
+            <h1>Foods in Sabak Bernam</h1>
+        </div>
+        <div class="right">
+            <div class="food-item">
+                <img src="Picture/rojak.jpg" alt="Rojak">
+                <div class="food-info">
+                    <h3>Rojak Mee</h3>
+                    <p>Local usually seek Rojak Mee for breakfast. A famous rojak mee place that are known by many people is Shamal Rojak Mee and the place has earned the title 'the best Rojak in Sungai Besar'.</p>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="Picture/celup tepung.jpg" alt="Seafood Celup Tepung">
+                <div class="food-info">
+                    <h3>Seafood Celup Tepung</h3>
+                    <p>Sabak Bernam is a seafood heaven where you can easily find sotong and udang goreng. There are popular place called Hay Celup Tepung Selambak where you can enjoy your seafood with deep-fried flour!</p>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="Picture/kelapa.jpg" alt="Fresh Coconut">
+                <div class="food-info">
+                    <h3>Fresh Coconut</h3>
+                    <p>Fresh coconut can be found in a café at Sekinchan Coconut Farm. They have menu with a variety of coconuts and people can enjoy a beautiful view!</p>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="Picture/mee udang.jpg" alt="Mee Udang">
+                <div class="food-info">
+                    <h3>Mee Udang</h3>
+                    <p>Mee udang is one of the popular food in Sabak Bernam for lunch, there are various places that serve delicious mee with fresh udang.</p>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="Picture/cempedak goreng.jpg" alt="Cempedak Goreng Hidayah">
+                <div class="food-info">
+                    <h3>Cempedak Goreng Hidayah</h3>
+                    <p>Sabak Bernam have the famous, crunchy, and tasty Cempedak Goreng by Hidayah. Anyone who crave Cempedak Goreng look after this place. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Explore Sabak Bernam. All rights reserved.</p>
+    </footer>
+</body>
+</html>
